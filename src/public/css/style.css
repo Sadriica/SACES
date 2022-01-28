@@ -17,9 +17,12 @@ h3{
 
 
 /* Login form */
+
 .login-form, .contenedor {
   width: 300px;
-  margin: 0 auto;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 .header:hover .logo {-webkit-transform:scale(1.3);transform:scale(1.3);}
 .header {overflow:hidden;}

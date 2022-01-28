@@ -27,8 +27,20 @@ module.exports = app => {
         res.render('../views/login.ejs');
     })
 
-    app.get('/tasting', (req,res) => {
-        res.render('../views/tasting.ejs');
+    app.get('/loginn', (req,res) => {
+        res.render('../views/loginn.ejs');
+    })
+
+    app.get('/main', (req,res) => {
+        res.render('../views/main.ejs');
+    })
+
+    app.get('/engineering', (req,res) => {
+        res.render('../views/engineering.ejs');
+    })
+
+    app.get('/systems', (req,res) => {
+        res.render('../views/systems.ejs');
     })
 
     app.get('/register', (req,res) => {
