@@ -7,12 +7,12 @@ module.exports = app => {
    app.get('/', (req,res) => {
        if (req.session.loggedin) {
 
-       res.render ('../views/index.ejs', {
+       res.render ('../views/loginn.ejs', {
            login : true,
            name : req.session.name
             });
         } else {
-           res.render('../views/index.ejs', {
+           res.render('../views/loginn.ejs', {
                login: false,
                name: 'Inicie sesión'
            });
@@ -41,6 +41,10 @@ module.exports = app => {
 
     app.get('/systems', (req,res) => {
         res.render('../views/systems.ejs');
+    })
+
+    app.get('/administration', (req,res) => {
+        res.render('../views/administration.ejs');
     })
 
     app.get('/register', (req,res) => {
@@ -149,22 +153,22 @@ module.exports = app => {
    
     //Solicitud POST de login
     app.post('/auth', async (req,res) => {
-        const {correo,pass} = req.body;
-        if(correo === process.env.CORREO_ADMIN && pass === process.env.PASS_ADMIN){
-            connection.query('SELECT * FROM contacto' , (err, results) => {  
+        const {nombre,primerapellido} = req.body;
+        if(nombre === process.env.Nombre && primerapellido === process.env.PrimerApellido){
+            connection.query('SELECT * FROM usuarios' , (err, results) => {  
                 if(err){
                     console.log(err)
-                } else{
-                    res.render('../views/administrador.ejs' , {
-                        con : results
-                    })
+                } else {
+                        res.render('../views/engineering.ejs' , {
+                            con : results
+                       })
+                    }})
                 }
-            })
-        }
-        let passwordHaash = await bcryptjs.hash(pass, 8);
 
-        if(correo && pass){
-            connection.query('SELECT * FROM users WHERE correo = ?', [correo], async (err, results) => {
+       // let passwordHaash = await bcryptjs.hash(pass, 8);
+
+        if(nombre && primerapellido){
+            connection.query('SELECT * FROM users WHERE Nombre = ?', [nombre], async (err, results) => {
                 console.log(results);
                 if (results.length === 0 || !(await bcryptjs.compare(pass, results[0].pass))){
 
@@ -195,7 +199,5 @@ module.exports = app => {
             })
         }
     })
-
-
 }
 
