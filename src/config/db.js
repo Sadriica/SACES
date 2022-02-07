@@ -15,7 +15,7 @@ connection.connect((err) => {
         console.log("Error de conexion con BD:" + err);
         return;
     }
-    console.log("conectado exitosamente con la BD:")
+    console.log("conectado exitosamente con la BD")
 })
 
 module.exports = connection;
