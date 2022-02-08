@@ -153,8 +153,8 @@ module.exports = app => {
    
     //Solicitud POST de login
     app.post('/auth', async (req,res) => {
-        const {nombre,primerapellido} = req.body;
-        if(nombre === process.env.Nombre && primerapellido === process.env.PrimerApellido){
+        const {id,nombre} = req.body;
+        if(id === process.env.id_usuario && nombre === process.env.nombre){
             connection.query('SELECT * FROM usuarios' , (err, results) => {  
                 if(err){
                     console.log(err)
@@ -165,13 +165,13 @@ module.exports = app => {
                     }})
                 }
 
-       // let passwordHaash = await bcryptjs.hash(pass, 8);
-
-        if(nombre && primerapellido){
-            connection.query('SELECT * FROM users WHERE Nombre = ?', [nombre], async (err, results) => {
+       // let passwordHaash = await bcryptjs.hash(nombre, 8);   
+        // results.length === 0 || !(await bcryptjs.compare(nombre, results[0].nombre))
+        if(id && nombre){
+            connection.query('SELECT * FROM users WHERE nombre = ?', [nombre], async (err, results) => {
                 console.log(results);
-                if (results.length === 0 || !(await bcryptjs.compare(pass, results[0].pass))){
-
+                if (id === "hola"){
+                    console.log(err)
                     res.render('../views/login.ejs', {
                         //login incorrecto sw2
                         alert:true,
@@ -184,8 +184,8 @@ module.exports = app => {
                     });
                 } else {
                     req.session.loggedin = true;
-                    req.session.name = results[0].name;
-                    res.render('../views/login.ejs', {
+                    req.session.name = nombre;
+                    res.render('../views/engineering.ejs', {
                         //login correcto sw2
                         alert:true,
                         alertTitle:'Conexión exitosa',
