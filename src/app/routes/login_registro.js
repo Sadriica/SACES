@@ -116,6 +116,7 @@ module.exports = app => {
             if(error){
                 console.log(error);
             } else {
+                console.log(results)
                 res.render('../views/register.ejs', {
                     alert:true,
                     alertTitle:'Registration',
@@ -124,6 +125,7 @@ module.exports = app => {
                     showConfirmButton:false,
                     timer:1500,
                     ruta:''
+
                 })
             }
         })
@@ -140,10 +142,10 @@ module.exports = app => {
             mensaje : mensaje
         }, (error,result) => {
             if(error){
-                console.log(error)
+                console.log(error);
             } else {
                 res.redirect('/')
-
+                console.log(result);
 
             }
         })
