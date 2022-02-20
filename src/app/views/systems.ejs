@@ -8,14 +8,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link  rel="stylesheet" href="/resources/css/main.css">
     <link rel="stylesheet" href="/resources/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/resources/css/form.css">
+</head>  <!--head -->
+
+<body> <!--body -->
 
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
           <p class="navbar-brand mx-auto" href="#" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: x-large;">ESCUELA DE INGENIERIA</p>
         </div>
-      </nav>
+      </nav> <!--Navbar-->
 
       <div class="container text-center py-4">
         <h2  class="display-4" >Progreso</h2>
@@ -25,56 +27,9 @@
               </div>
             </div>
         </h2>
-      </div>
+      </div> <!-- Barra Progreso-->
 
-
-
-    <!--  // IDEA ITEMS
-      <div class="container text-center py-2">
-      <h2  class="display-5" >Items</h2>
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="container" style="border: 1px solid black">
-                <figure class="figure">
-                  <p></p>
-                   <a href=""> <img src="resources/img/uno.png" class="figure-img img-fluid rounded" alt="..." style="width: 100px;"></a>
-                    <figcaption class="figure-caption" style="font-weight: bold;" >Item #1: ....</figcaption>
-                  </figure>
-              </div>
-          </div>
-
-          <div class="col">
-            <div class="container" style="border: 1px solid black">
-                <figure class="figure">
-                  <p></p>
-                      <a href=""> <img src="resources/img/dos.png" class="figure-img img-fluid rounded" alt="..." style="width: 100px;"></a>
-                      <figcaption class="figure-caption" style="font-weight: bold;" >Item #2: ....</figcaption>
-                  </figure>
-              </div>
-          </div>
-
-          <div class="col">
-            <div class="container" style="border: 1px solid black">
-                <figure class="figure">
-                  <p></p>
-                   <a href=""> <img src="resources/img/tres.png" class="figure-img img-fluid rounded" alt="..." style="width: 100px;"></a>
-                    <figcaption class="figure-caption" style="font-weight: bold;" >Item #3: ....</figcaption>
-                  </figure>
-              </div>
-          </div>
-        </div>
-      </div>     
-     -->
-     
      <p></p>
-
-     <!-- // DESCARGAR ARCHIVO - VISUALIZADOR ONLINE
-       <embed src="resources/files/SACES.docx" type="application/pdf" width="100%" height="100%" /> 
-       <iframe src="  https://docs.google.com/document/d/1xBlj3kmaS1L48De-B87-lqpB050u8ofp/edit?usp=sharing&ouid=108830536080145560703&rtpof=true&sd=true" style="width:80%; height:500px;" frameborder="0" ></iframe>
-    -->
 
     <h5>LINEAMIENTOS GENERALES</h5>
    <!-- <p>La presente Guía tiene el propósito de orientar la solicitud de Registro Calificado de programas nuevos, de acuerdo con los lineamientos del Decreto 1330 de 2019, la Resolución 21795 de 2020 y la plataforma Nuevo SACES del Ministerio de Educación Nacional –MEN–.
@@ -85,18 +40,22 @@
       
       Para todas las pestañas, se debe resumir la información en 7.000 caracteres. Las pestañas de texto no permiten cuadros, ni imágenes, ni gráficas, etc. Este tipo de información se debe consolidar en los documentos anexos que solicita cada pestaña, revisando el título que dice “ANEXAR”
       </p> -->
+
+    <div class="container-fluid"> <!-- Container Principal -->
+
     <div> <h5>1. INFORMACIÓN GENERAL DE LA IES</h5>
-      
+
       <p>(Verficar que la información intitucional esta correcta)</p>
-      <form action="" class="form-upload">
-        <h1 class="form-title"></h1>
-        <div class="container">
-          <label for="" class="form-label"></label>
-          <input type="text" class="form-input">
+
+        <div class="mb-3">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-        <input type="file">
-        <input type="submit">
-      </form>
+        <div class="mb-3">
+            <input class="form-control" type="file" id="formFileMultiple" multiple>
+        </div>
+
+        <button type="button" class="btn btn-success">Subir</button>
+
     </div> <!-- 1. INFORMACIÓN GENERAL DE LA IES -->
     <p></p>
       
@@ -113,178 +72,175 @@
         - Renovación Registro Calificado
         - Modificación Registro Calificado
       </p> -->
-        <form action="" class="form-upload">
-          <h1 class="form-title"></h1>
-          <div class="container">
-            <label for="" class="form-label"></label>
-            <input type="text" class="form-input">
+          <div class="mb-3">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-          <input type="file">
-          <input type="submit">
-        </form>
-      </div>
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+
+      </div> <!--2.1 -->
       <p></p>
       
       <div> <h6>2.2 SELECCIONAR NIVEL DE FORMACIÓN</h6>
-      <form action="" class="form-upload">
-          <h1 class="form-title"></h1>
-          <div class="container">
-            <label for="" class="form-label"></label>
-            <input type="text" class="form-input">
+          <div class="mb-3">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-          <input type="file">
-          <input type="submit">
-      </form>
-      </div>
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+
+      </div> <!--2.2 -->
       <p></p>
 
       <div><h6>2.3 SOLICITUD REGISTRO CALIFICADO ÚNICO</h6>
-      <form action="" class="form-upload">
-          <h1 class="form-title"></h1>
-          <div class="container">
-            <label for="" class="form-label"></label>
-            <input type="text" class="form-input">
+          <div class="mb-3">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-          <input type="file">
-          <input type="submit">
-      </form>
-      </div>
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+
+      </div> <!--2.3 -->
       <p></p>
 
       <div> <h6>2.4 INFORMACIÓN ESPECÍFICA DEL PROGRAMA</h6>
-      <form action="" class="form-upload">
-          <h1 class="form-title"></h1>
-          <div class="container">
-            <label for="" class="form-label"></label>
-            <input type="text" class="form-input">
+          <div class="mb-3">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-          <input type="file">
-          <input type="submit">
-      </form>
-      </div>
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+
+      </div> <!--2.4 -->
       <p></p>
 
       <div>  <h6>2.5 CRÉDITOS DEL PROGRAMA</h6>
-      <form action="" class="form-upload">
-          <h1 class="form-title"></h1>
-          <div class="container">
-            <label for="" class="form-label"></label>
-            <input type="text" class="form-input">
+          <div class="mb-3">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-          <input type="file">
-          <input type="submit">
-      </form>
-      </div>
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+
+      </div> <!--2.5 -->
       <p></p>
 
       <div><h6>2.6 ESCENARIOS DE PRACTICA</h6>
-      <form action="" class="form-upload">
-          <h1 class="form-title"></h1>
-          <div class="container">
-            <label for="" class="form-label"></label>
-            <input type="text" class="form-input">
+          <div class="mb-3">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-          <input type="file">
-          <input type="submit">
-      </form>
-      </div>
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+
+      </div> <!--2.6 -->
       <p></p>
 
       <div> <h6>2.7 CICLOS PROPEDÉUTICOS</h6>
-      <form action="" class="form-upload">
-          <h1 class="form-title"></h1>
-          <div class="container">
-            <label for="" class="form-label"></label>
-            <input type="text" class="form-input">
+          <div class="mb-3">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-          <input type="file">
-          <input type="submit">
-      </form>
-      </div>
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+
+      </div> <!--2.7 -->
       <p></p>
 
       <div> <h6>2.8 CUBRIMIENTO DEL PROGRAMA</h6>
-      <form action="" class="form-upload">
-          <h1 class="form-title"></h1>
-          <div class="container">
-            <label for="" class="form-label"></label>
-            <input type="text" class="form-input">
+          <div class="mb-3">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-          <input type="file">
-          <input type="submit">
-      </form>
-      </div>
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+
+      </div> <!--2.8 -->
       <p></p>
 
-
       <div> <h6>2.9 IDIOMAS</h6>
-      <form action="" class="form-upload">
-          <h1 class="form-title"></h1>
-          <div class="container">
-            <label for="" class="form-label"></label>
-            <input type="text" class="form-input">
+          <div class="mb-3">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-          <input type="file">
-          <input type="submit">
-      </form>
-      </div>
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+
+      </div> <!--2.9 -->
       <p></p>
       
       <div><h6>2.10 CREACIÓN DEL PROGRAMA</h6>
-      <form action="" class="form-upload">
-          <h1 class="form-title"></h1>
-          <div class="container">
-            <label for="" class="form-label"></label>
-            <input type="text" class="form-input">
+          <div class="mb-3">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-          <input type="file">
-          <input type="submit">
-      </form>
-      </div>
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+
+      </div> <!--2.10 -->
       <p></p>
 
       <p>ANEXO OBLIGATORIO. Documento Interno de Creación</p> 
       <p></p>
 
       <div>  <h6>2.11 INFORMACIÓN DE CONTACTO DEL PROGRAMA</h6>
-      <form action="" class="form-upload">
-          <h1 class="form-title"></h1>
-          <div class="container">
-            <label for="" class="form-label"></label>
-            <input type="text" class="form-input">
+          <div class="mb-3">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-          <input type="file">
-          <input type="submit">
-      </form>
-      </div>
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+
+      </div> <!--2.11 -->
       <p></p>
 
     </div> <!-- 2 INFORMACIÓN GENERAL DEL PROGRAMA -->
     <p></p>
 
+
     <div> <h5>3 CONDICICIONES DE PROGRAMA </h5>
       <p></p> 
-        
-        
+
       <div><h6>- 3.1 CONDICIÓN DE CALIDAD 1: DENOMINACIÓN DEL PROGRAMA</h6>
-      <form action="form-page" method="post">
-          <ul>
-           <li>
-             <label for="DENOMINACIÓN DEL PROGRAMA(1)">DENOMINACIÓN DEL PROGRAMA(1) <br> *Síntesis (Máximo 7.000 caracteres)</label>
+
           <!---   <p>Información a diligenciar
-              Describa la correspondencia de la denominación del programa con el título a otorgar, el nivel formación, los contenidos curriculares del programa, los resultados de aprendizaje y el perfil del egresado.
-              
-              Adicionalmente, cuando se trate de una nueva denominación, no registrada o activa en SNIES, presente un análisis en el que se justifique la nueva denominación.
-              
-              Mensaje Ayuda
-              Argumentar la correspondencia de la denominación del programa con el título a otorgar, el nivel formación, los contenidos curriculares del programa y el perfil del egresado. Cuando se trate de una nueva denominación, no registrada o activa en SNIES, adicionalmente justificar la nueva denominación, teniendo en cuenta las disposiciones del parágrafo del artículo 2.5.3.2.3.2.3 del Decreto 1075 de 2015 y del literal b) del artículo 6 de la Resolución 21795 de 2020.
-              </p> -->
-             <input type="text" id="DENOMINACIÓN DEL PROGRAMA(1)" name="DENOMINACIÓN DEL PROGRAMA(1)"  >
-             <p></p>
-           </li>
-           <li>
-             <label for="ANEXAR">ANEXAR</label>
-             <input type="text" id="ANEXAR" name="ANEXAR">
+            Describa la correspondencia de la denominación del programa con el título a otorgar, el nivel formación, los contenidos curriculares del programa, los resultados de aprendizaje y el perfil del egresado.
+
+            Adicionalmente, cuando se trate de una nueva denominación, no registrada o activa en SNIES, presente un análisis en el que se justifique la nueva denominación.
+
+            Mensaje Ayuda
+            Argumentar la correspondencia de la denominación del programa con el título a otorgar, el nivel formación, los contenidos curriculares del programa y el perfil del egresado. Cuando se trate de una nueva denominación, no registrada o activa en SNIES, adicionalmente justificar la nueva denominación, teniendo en cuenta las disposiciones del parágrafo del artículo 2.5.3.2.3.2.3 del Decreto 1075 de 2015 y del literal b) del artículo 6 de la Resolución 21795 de 2020.
+            </p> -->
+
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">DENOMINACIÓN DEL PROGRAMA(1)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
             <!-- <p>Artículo 7. Evidencias e indicadores de la denominación del programa. Teniendo en cuenta el artículo 6 de la presente resolución, la institución deberá presentar, por lo menos, la denominación del programa y el título a otorgar, así como el análisis que realizó para su definición, de conformidad con to dispuesto en el artículo2.5.3.2.3.2.2 del Decreto 1075 de 2015, modificado
               por el Decreto 1330 de 2019.
               
@@ -294,36 +250,42 @@
               NOTA: Cuando se trate de una solicitud de registro calificado único, la denominación del programa académico deberá ser igual para todas las modalidades y/o todos los lugares de desarrollo.
               
               </p> -->
-           </li>
-           <p></p>
-           <li>
-            <label for="DENOMINACIÓN DEL PROGRAMA(2)">DENOMINACIÓN DEL PROGRAMA(2) <br> *Síntesis (Máximo 7.000 caracteres)</label>
+
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+          <p></p>
+
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
+
+
        <!--    <p>Información a diligenciar
               Demuestre que la denominación del programa y el título a otorgar cumplen con la normatividad vigente, de acuerdo a la regulación establecida
 
               Mensaje Ayuda
               Explicitar el marco normativo aplicable al programa propuesto y su denominación.
-               </p> --> 
-            <input type="text" id="DENOMINACIÓN DEL PROGRAMA(2)" name="DENOMINACIÓN DEL PROGRAMA(2)"  >
-            <p></p>
-            <li>
-              <label for="ANEXAR">ANEXAR</label>
-              <input type="text" id="ANEXAR" name="ANEXAR">
+               </p> -->
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">DENOMINACIÓN DEL PROGRAMA(2)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+
             <!--  <p>Para programas académicos cuya titulación determine, por requisito legal, la exigencia de tarjeta o licencia profesional, presentar un análisis sobre la incidencia de la respectiva normatividad en el desempeño profesional del egresado conforme a la denominación y titulación definida para el programa.
             </p> -->
-            </li>
-            <li>
-          </ul>
-      </form>
-      </div>
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
+
+      </div> <!--3.1 -->
       <p></p>
 
       <div> <h6>- 3.2 CONDICION DE CALIDAD 2: JUSTIFICACIÓN DEL PROGRAMA</h6>
-        <form action="form-page" method="post">
-          <ul>
-           <li>
-             <label for="JUSTIFICACIÓN DEL PROGRAMA (1)">JUSTIFICACIÓN DEL PROGRAMA (1) <br> *Síntesis (Máximo 7.000 caracteres)</label>
-            <!-- <p>Información a diligenciar
+
+    <!-- <p>Información a diligenciar
               Dé cuenta de la pertinencia del programa mediante una justificación en la que se sustente la correspondencia entre el contenido curricular, los perfiles de egreso y la(s) modalidad(es) y su relación con el desarrollo social, cultural, ambiental, económico y científico, frente a las necesidades del país y la región.
               
               La institución deberá justificar la creación del programa académico dentro de los campos de educación y formación. en coherencia con la modalidad o modalidades y el lugar o lugares de desarrollo, para lo cual, contará con un análisis que integre, por lo menos: 
@@ -350,12 +312,12 @@
               Mensaje Ayuda
               Aportar una justificación que sustente el contenido curricular, los perfiles de egreso y la(s) modalidad(es) en que se desea ofrecer el programa para que sea pertinente con el desarrollo social, cultural, ambiental, económico y científico, frente a las necesidades del país y la región, que permita establecer su pertinencia.
               </p> -->
-             <input type="text" id="JUSTIFICACIÓN DEL PROGRAMA (1)" name="JUSTIFICACIÓN DEL PROGRAMA (1)"  >
-             <p></p>
-           </li>
-           <li>
-             <label for="ANEXAR">ANEXAR</label>
-             <input type="text" id="ANEXAR" name="ANEXAR">
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">JUSTIFICACIÓN DEL PROGRAMA(1)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
            <!---  <p>Las evidencias previstas en el artículo 9 de la Resolución 21795 de 2020, en coherencia con el nivel de formación, la(s) modalidad(es) y el (los) lugar(es) de desarrollo:
 
               •	Análisis que integre los elementos previstos en el artículo 8 de la Resolución 21795 de 19 de noviembre de 2020.
@@ -367,19 +329,21 @@
               
               NOTA: Cuando se trate de una solicitud de registro calificado único, la institución deberá presentar la respectiva justificación para cada modalidad y/o lugar de desarrollo, indicando los aspectos similares entre estos y las particularidades de cada una(o).
               </p> -->
-           </li>
-          </ul>
-         </form> 
-      </div>
+
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
+
+
+      </div> <!--3.2 -->
       <p></p>
         
       <div> <h6>- 3.3 CONDICIÓN DE CALIDAD 3: ASPECTOS CURRICULARES</h6>
           
-         <form action="form-page" method="post">
-           <ul>
-            <li>
-              <label for="ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (1)">ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (1) <br> *Síntesis (Máximo 7.000 caracteres)</label>
-             <!-- <p>Información a diligenciar
+         <!-- <p>Información a diligenciar
 Describa el plan de estudios del programa, representado en créditos académicos, conforme a los resultados de aprendizaje propuestos, la formación integral, las actividades académicas y los perfiles de egreso, en armonía con las habilidades del contexto internacional, nacional, y local orientados al desarrollo de las capacidades para aprender a aprender.
 
 Mensaje Ayuda
@@ -387,12 +351,12 @@ Presente el plan general de estudios del programa, representado en créditos aca
 Para el caso de los programas por ciclos propedéuticos, se debe describir, además, el componente propedéutico que hace parte de los programas y las competencias asociadas a cada nivel de formación.
 
 </p> -->
-              <input type="text" id="ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (1)" name="ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (1)"  >
-              <p></p>
-            </li>
-            <li>
-              <label for="ANEXAR">ANEXAR</label>
-              <input type="text" id="ANEXAR" name="ANEXAR">
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (1)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
             <!---  <p>Las evidencias previstas en los literales a), f) y g) del artículo 13 de la Resolución 21795 de 2020, en coherencia con el nivel de formación, la(s) modalidad(es) y el (los) lugar(es) de desarrollo:
 
 a. Plan general de estudios, representado en créditos académicos, de acuerdo con las políticas académicas definidas por la institución, que dé cuenta de:
@@ -405,20 +369,26 @@ Medios de comunicación y difusión a los estudiantes del plan general de estudi
 Para los programas que conforman el proceso formativo por ciclos propedéuticos deberá presentar la información descrita en los anteriores numerales para cada uno de los niveles de formación y, además, incluir la descripción de las competencias propias de cada nivel de formación y del componente o los componentes propedéuticos que estructuran la propuesta.
 
 NOTA: Cuando se trate de una solicitud de registro calificado único, los componentes formativos diferentes a las estrategias de flexibilización curricular deberán ser iguales para todas las modalidades y/o lugares de desarrollo del programa académico. Las estrategias de flexibilización curricular podrán ser similares en las modalidades y/o lugares de desarrollo, indicando las particularidades de cada una(o).</p> -->
-            </li>
-            <label for="ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (2)">ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (2) <br> *Síntesis (Máximo 7.000 caracteres)</label>
-            <!-- <p>Información a diligenciar
+
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
+
+          <!-- <p>Información a diligenciar
 Describa el proceso institucional realizado para el diseño y la construcción de la propuesta de formación y la reflexión realizada que demuestra la armonía de la propuesta con las habilidades del contexto internacional, nacional y local orientados al desarrollo de las capacidades para aprender a aprender. Así mismo, presente la declaración de los resultados de aprendizaje para el programa académico, su perfil de egreso y la correspondencia de estos.
 
 Mensaje Ayuda
 Evidencie el proceso institucional realizado para el diseño y la construcción de la propuesta de formación y la reflexión realizada que demuestre la armonía de la propuesta con las habilidades del contexto internacional, nacional, y local orientados al desarrollo de las capacidades para aprender a aprender. Asimismo, presente la declaración de los resultados de aprendizaje para el programa académico, su perfil de egreso y la correspondencia de estos.
 </p> -->
-             <input type="text" id="ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (2)" name="ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (2)"  >
-             <p></p>
-           </li>
-           <li>
-             <label for="ANEXAR">ANEXAR</label>
-             <input type="text" id="ANEXAR" name="ANEXAR">
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (2)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
            <!---  <p>Las evidencias previstas en el artículo 13 literales b), c), d), e) y g) de la Resolución 21795 de 2020, en coherencia con el nivel de formación, la(s) modalidad(es) y el (los) lugar(es) de desarrollo:
 
 b. Descripción del proceso de definición y análisis de los resultados de aprendizaje del programa académico, mencionando los referentes conceptuales, de ser aplicable.
@@ -428,20 +398,27 @@ e. Descripción del perfil de egreso del programa académico.
 g. Para los programas que conforman el proceso formativo por ciclos propedéuticos deberá presentar la información descrita en los anteriores numerales para cada uno de los niveles de formación.
 
 NOTA: Cuando se trate de una solicitud de registro calificado único, los componentes formativos del presente ítem deberán ser iguales para todas las modalidades y/o lugares de desarrollo del programa académico.</p> -->
-           </li>
-           <label for="ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (3)">ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (3) <br> *Síntesis (Máximo 7.000 caracteres)</label>
-           <!-- <p>Información a diligenciar
+
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
+
+
+          <!-- <p>Información a diligenciar
 Describa los lineamientos e innovación pedagógica y didáctica institucionales aplicables al programa en coherencia con la(s) modalidad(es) propuesta(s). Así mismo, describa la manera como se concibe el aprendizaje, la enseñanza, las estrategias didácticas y las herramientas tecnológicas dispuestas para favorecer la interacción entre estudiantes y entre estudiantes, y profesores.
 
 Mensaje Ayuda
 Evidencie los lineamientos e innovación pedagógica y didáctica aplicables al programa, en coherencia con la(s) modalidad(es) propuesta(s). Asimismo, describa la manera como se concibe el aprendizaje, la enseñanza, las estrategias didácticas y las herramientas tecnológicas dispuestas para favorecer la interacción entre estudiantes y entre estudiantes y profesores.
 </p> -->
-            <input type="text" id="ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (3)" name="ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (3)"  >
-            <p></p>
-          </li>
-          <li>
-            <label for="ANEXAR">ANEXAR</label>
-            <input type="text" id="ANEXAR" name="ANEXAR">
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (3)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
           <!---  <p>Anexar: Las evidencias previstas en el artículo 15 literales a), b), c) y d) de la Resolución 21795 de 2020, en coherencia con el nivel de formación, la(s) modalidad(es) y el (los) lugar(es) de desarrollo:
 
 •	Descripción del modelo o modelos pedagógicos y didácticos del programa académico que conduzcan al logro de los resultados de aprendizaje.
@@ -452,20 +429,26 @@ Evidencie los lineamientos e innovación pedagógica y didáctica aplicables al 
 
 NOTA: Cuando se trate de una solicitud de registro calificado único, los componentes pedagógicos podrán ser similares en las modalidades y/o lugares de desarrollo, indicando las particularidades de cada una(o).
 </p> -->
-          </li>
-          <label for="ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (4)">ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (4) <br> *Síntesis (Máximo 7.000 caracteres)</label>5
-          <!-- <p>Información a diligenciar
-Demuestre como en el programa, desde los aspectos curriculares, plantea la creación y fortalecimiento de vínculos entre la institución y los diversos actores.
 
-Mensaje Ayuda
-Sustente cómo el programa, desde los aspectos curriculares, plantea la creación y fortalecimiento de vínculos entre la institución y los diversos actores.
-</p> -->
-           <input type="text" id="ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (4)" name="ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (4)"  >
-           <p></p>
-         </li>
-         <li>
-           <label for="ANEXAR">ANEXAR</label>
-           <input type="text" id="ANEXAR" name="ANEXAR">
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
+
+          <!-- <p>Información a diligenciar
+  Demuestre como en el programa, desde los aspectos curriculares, plantea la creación y fortalecimiento de vínculos entre la institución y los diversos actores.
+
+  Mensaje Ayuda
+  Sustente cómo el programa, desde los aspectos curriculares, plantea la creación y fortalecimiento de vínculos entre la institución y los diversos actores.
+  </p> -->
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (4)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
          <!---  <p>Las evidencias previstas en el artículo 17 literales a) y b) de la Resolución 21795 de 2020, en coherencia con el nivel de formación, la(s) modalidad(es) y el (los) lugar(es) de desarrollo:
 
 • Descripción de la forma en la cual se evidencia la articulación de los componentes de interacción con el proceso formativo.
@@ -474,20 +457,27 @@ Sustente cómo el programa, desde los aspectos curriculares, plantea la creació
 
 NOTA: Cuando se trate de una solicitud de registro calificado único, los componentes de interacción podrán ser similares en las modalidades y/o lugares de desarrollo, indicando las particularidades de cada una(o).
 </p> -->
-         </li>
-         <label for="ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (5)">ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (5) <br> *Síntesis (Máximo 7.000 caracteres)</label>
-         <!-- <p>Información a diligenciar
-Argumente cómo el programa, logra desarrollar habilidades para interrelacionarse tanto en profesores como en estudiantes
 
-Mensaje Ayuda
-Sustente cómo el programa desde su propuesta de formación, logra desarrollar habilidades para interrelacionarse tanto en profesores como en estudiantes.
-</p> -->
-          <input type="text" id="ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (5)" name="ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (5)"  >
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
           <p></p>
-        </li>
-        <li>
-          <label for="ANEXAR">ANEXAR</label>
-          <input type="text" id="ANEXAR" name="ANEXAR">
+
+          <!-- <p>Información a diligenciar
+      Argumente cómo el programa, logra desarrollar habilidades para interrelacionarse tanto en profesores como en estudiantes
+
+      Mensaje Ayuda
+      Sustente cómo el programa desde su propuesta de formación, logra desarrollar habilidades para interrelacionarse tanto en profesores como en estudiantes.
+      </p> -->
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (5)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
+
         <!---  <p>Anexar: Las evidencias previstas en el artículo 17 literal c) de la Resolución 21795 de 2020, en coherencia con el nivel de formación, la(s) modalidad(es) y el (los) lugar(es) de desarrollo:
 
 • Descripción de la forma en la cual el programa desarrollará las condiciones para que sus estudiantes y profesores puedan interactuar en contextos sincrónicos y asincrónicos, independientemente de la modalidad o modalidades del programa.
@@ -495,20 +485,26 @@ Sustente cómo el programa desde su propuesta de formación, logra desarrollar h
 
 NOTA: Cuando se trate de una solicitud de registro calificado único, los componentes de interacción podrán ser similares en las modalidades y/o lugares de desarrollo, indicando las particularidades de cada una(o).
 </p> -->
-        </li>
-        <label for="ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (6)">ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (6) <br> *Síntesis (Máximo 7.000 caracteres)</label>
-        <!-- <p>Información a diligenciar
-Describa las condiciones previstas por el programa, orientadas a la internacionalización del currículo y al desarrollo de una segunda lengua
 
-Mensaje Ayuda
-Sustente las condiciones previstas por el programa con relación a la política de internacionalización, el desarrollo de una segunda lengua y a los convenios existentes y proyectados.
-</p> -->
-         <input type="text" id="ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (6)" name="ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (6)"  >
-         <p></p>
-       </li>
-       <li>
-         <label for="ANEXAR">ANEXAR</label>
-         <input type="text" id="ANEXAR" name="ANEXAR">
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
+
+          <!-- <p>Información a diligenciar
+    Describa las condiciones previstas por el programa, orientadas a la internacionalización del currículo y al desarrollo de una segunda lengua
+
+    Mensaje Ayuda
+    Sustente las condiciones previstas por el programa con relación a la política de internacionalización, el desarrollo de una segunda lengua y a los convenios existentes y proyectados.
+    </p> -->
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (6)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
        <!---  <p>Las evidencias previstas en el artículo 17 literal d), parágrafo 1 y parágrafo 2 de la Resolución 21795 de 2020, en coherencia con el nivel de formación, la(s) modalidad(es) y el (los) lugar(es) de desarrollo:
 
 • Descripción de las actividades académicas, docentes, formativas, científicas, culturales y de extensión que proyecta implementar en los próximos siete (7) años para favorecer la internacionalización, que incluya, por lo menos:
@@ -524,20 +520,27 @@ e) Recursos (humanos, financieros, tecnológicos y físicos) requeridos para la 
 NOTA: Cuando se trate de una solicitud de registro calificado único, los componentes de interacción podrán ser similares en las modalidades y/o lugares de desarrollo, indicando las particularidades de cada una(o).
 
 </p> -->
-       </li>
-       <label for="ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (7)">ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (7) <br> *Síntesis (Máximo 7.000 caracteres)</label>
-        <!-- <p>Información a diligenciar
-Describir los fundamentos teóricos del programa, haciendo referencia a la naturaleza del objeto de estudio y las formas de conocimiento.
 
-Mensaje Ayuda
-Sustente los fundamentos teóricos y conceptuales del programa, haciendo referencia a la naturaleza del objeto de estudio y las formas de conocimiento.
-</p> -->
-         <input type="text" id="ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (7)" name="ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (7)"  >
-         <p></p>
-       </li>
-       <li>
-         <label for="ANEXAR">ANEXAR</label>
-         <input type="text" id="ANEXAR" name="ANEXAR">
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
+
+          <!-- <p>Información a diligenciar
+      Describir los fundamentos teóricos del programa, haciendo referencia a la naturaleza del objeto de estudio y las formas de conocimiento.
+
+      Mensaje Ayuda
+      Sustente los fundamentos teóricos y conceptuales del programa, haciendo referencia a la naturaleza del objeto de estudio y las formas de conocimiento.
+      </p> -->
+
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (7)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
        <!---  <p>Anexar: Las evidencias previstas en el artículo 19 de la Resolución 21795 de 2020, en coherencia con el nivel de formación, la(s) modalidad(es) y el (los) lugar(es) de desarrollo:
 
 • Los fundamentos teóricos y conceptuales de los conocimientos que sustentan el programa académico, así como su correspondiente justificación.
@@ -545,20 +548,28 @@ Sustente los fundamentos teóricos y conceptuales del programa, haciendo referen
 
 NOTA: Cuando se trate de una solicitud de registro calificado único, la conceptualización teórica y epistemológica del programa deberá ser igual para todas las modalidades y/o lugares de desarrollo del programa académico
 </p> -->
-       </li>
-       <label for="ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (8)">ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (8) <br> *Síntesis (Máximo 7.000 caracteres)</label>
-        <!-- <p>Información a diligenciar
-Presentar los mecanismos de evaluación definidos, de forma articulada y coherente con el proceso formativo y las actividades académicas. Enuncie los instrumentos propuestos de medición y seguimiento del desempeño de profesores y estudiantes con relación a los resultados de aprendizaje previstos para el programa, aclarando el propósito de cada instrumento.
 
-Mensaje Ayuda
-Presente los mecanismos de evaluación definidos, de forma articulada y coherente con el proceso formativo y las actividades académicas. Enuncie los instrumentos propuestos de medición y seguimiento del desempeño de profesores y estudiantes con relación a los resultados de aprendizaje previstos para el programa, aclarando el propósito de cada instrumento.
-</p> -->
-         <input type="text" id="ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (8)" name="ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (8)"  >
-         <p></p>
-       </li>
-       <li>
-         <label for="ANEXAR">ANEXAR</label>
-         <input type="text" id="ANEXAR" name="ANEXAR">
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
+
+          <!-- <p>Información a diligenciar
+      Presentar los mecanismos de evaluación definidos, de forma articulada y coherente con el proceso formativo y las actividades académicas. Enuncie los instrumentos propuestos de medición y seguimiento del desempeño de profesores y estudiantes con relación a los resultados de aprendizaje previstos para el programa, aclarando el propósito de cada instrumento.
+
+      Mensaje Ayuda
+      Presente los mecanismos de evaluación definidos, de forma articulada y coherente con el proceso formativo y las actividades académicas. Enuncie los instrumentos propuestos de medición y seguimiento del desempeño de profesores y estudiantes con relación a los resultados de aprendizaje previstos para el programa, aclarando el propósito de cada instrumento.
+      </p> -->
+
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">ASPECTOS CURRICULARES - COMPONENTES FORMATIVOS (8)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
+
        <!---  <p>Las evidencias previstas en los literales a), b), c), d), e), f) y g) del artículo 21 de la Resolución 21795 de 2020, en coherencia con el nivel de formación, la(s) modalidad(es) y el (los) lugar(es) de desarrollo:
 
 • Descripción y diseño de los mecanismos de evaluación en coherencia con las políticas institucionales, el proceso formativo, los resultados de aprendizaje y el modelo o modelos pedagógicos.
@@ -572,29 +583,31 @@ Presente los mecanismos de evaluación definidos, de forma articulada y coherent
 NOTA: Cuando se trate de una solicitud de registro calificado único, los mecanismos de evaluación del programa académico podrán ser similares en las modalidades y/o lugares de desarrollo, indicando las particularidades de cada una(o).
 
 </p> -->
-       </li>
-           </ul>
-          </form>
-      </div>
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
+
+      </div> <!--3.3 -->
       <p></p>
 
       <div> <h6>- 3.4 CONDICIÓN DE CALIDAD 4: ORGANIZACIÓN DE ACTIVIDADES ACADÉMICAS Y PROCESO FORMATIVO</h6>
-        <form action="form-page" method="post">
-          <ul>
-           <li>
-             <label for="CRITERIO ORGANIZACIÓN DE ACTIVIDADES ACADÉMICAS Y PROCESO FORMATIVO (1)">CRITERIO ORGANIZACIÓN DE ACTIVIDADES ACADÉMICAS Y PROCESO FORMATIVO (1) <br> *Síntesis (Máximo 7.000 caracteres)</label>
-            <!-- <p>Información a diligenciar
+
+          <!-- <p>Información a diligenciar
 Describir la manera en que se dan o proyectan relaciones entre el enfoque pedagógico y didáctico adoptado y los resultados de aprendizaje declarados para el programa/espacio académico
 
 Mensaje Ayuda
 Describa la manera en que se dan o proyectan relaciones entre el enfoque pedagógico y didáctico adoptado y los resultados de aprendizaje declarados para el programa/espacio académico.
 </p> -->
-             <input type="text" id="CRITERIO ORGANIZACIÓN DE ACTIVIDADES ACADÉMICAS Y PROCESO FORMATIVO (1)" name="CRITERIO ORGANIZACIÓN DE ACTIVIDADES ACADÉMICAS Y PROCESO FORMATIVO (1)"  >
-             <p></p>
-           </li>
-           <li>
-             <label for="ANEXAR">ANEXAR</label>
-             <input type="text" id="ANEXAR" name="ANEXAR">
+
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">CRITERIO ORGANIZACIÓN DE ACTIVIDADES ACADÉMICAS Y PROCESO FORMATIVO (1)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
            <!---  <p>Las evidencias previstas en los literales a), b), c) y d) del artículo 24 la Resolución 21795 de 2020, en coherencia con el nivel de formación, la(s) modalidad(es) y el (los) lugar(es) de desarrollo:
 
 • Proyecto educativo del programa o el que haga sus veces.
@@ -605,21 +618,27 @@ Describa la manera en que se dan o proyectan relaciones entre el enfoque pedagó
 NOTA: Cuando se trate de una solicitud de registro calificado único, la organización de las actividades académicas y proceso formativo podrá ser similar en las modalidades y/o lugares de desarrollo del programa, indicando las particularidades de cada una(o).
 
 </p> -->
-           </li>
-                <li>
-             <label for="CRITERIO ORGANIZACIÓN DE ACTIVIDADES ACADÉMICAS Y PROCESO FORMATIVO (2)">CRITERIO ORGANIZACIÓN DE ACTIVIDADES ACADÉMICAS Y PROCESO FORMATIVO (2) <br> *Síntesis (Máximo 7.000 caracteres)</label>
-            <!-- <p>Información a diligenciar
-Describa el plan de estudios del programa expresado en créditos académicos, discriminando las horas de trabajo independiente y directo con el profesor.
 
-Mensaje Ayuda
-Se debe presentar el plan de estudios del programa expresado en créditos académicos discriminando las horas de trabajo independiente y directo con el profesor. Todo lo anterior en coherencia con el área de formación, la modalidad y el nivel del programa, así como la identidad, naturaleza y tipología institucional.
-</p> -->
-             <input type="text" id="CRITERIO ORGANIZACIÓN DE ACTIVIDADES ACADÉMICAS Y PROCESO FORMATIVO (2)" name="CRITERIO ORGANIZACIÓN DE ACTIVIDADES ACADÉMICAS Y PROCESO FORMATIVO (2)"  >
-             <p></p>
-           </li>
-           <li>
-             <label for="ANEXAR">ANEXAR</label>
-             <input type="text" id="ANEXAR" name="ANEXAR">
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
+
+          <!-- <p>Información a diligenciar
+ Describa el plan de estudios del programa expresado en créditos académicos, discriminando las horas de trabajo independiente y directo con el profesor.
+
+ Mensaje Ayuda
+ Se debe presentar el plan de estudios del programa expresado en créditos académicos discriminando las horas de trabajo independiente y directo con el profesor.
+ </p> -->
+
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">CRITERIO ORGANIZACIÓN DE ACTIVIDADES ACADÉMICAS Y PROCESO FORMATIVO (2)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
            <!---  <p>Anexar: Las evidencias previstas en el artículo 24 literales e), f), i) y j) de la Resolución 21795 de 2020, en coherencia con el nivel de formación, la(s) modalidad(es) y el (los) lugar(es) de desarrollo:
 
 • Créditos académicos asociados a cada actividad académica prevista en el plan general de estudios, así como la discriminación y la justificación de las horas de interacción del estudiante con el profesor, de forma sincrónica o asincrónica, y las horas de trabajo independiente del estudiante.
@@ -630,21 +649,26 @@ Se debe presentar el plan de estudios del programa expresado en créditos acadé
 NOTA: Cuando se trate de una solicitud de registro calificado único, la organización de las actividades académicas y proceso formativo podrá ser similar en las modalidades y/o lugares de desarrollo del programa, indicando las particularidades de cada una(o).
 
 </p> -->
-           </li>
-           <li>
-            <label for="CRITERIO ORGANIZACIÓN DE ACTIVIDADES ACADÉMICAS Y PROCESO FORMATIVO (3)">CRITERIO ORGANIZACIÓN DE ACTIVIDADES ACADÉMICAS Y PROCESO FORMATIVO (3) <br> *Síntesis (Máximo 7.000 caracteres)</label>
-           <!-- <p>Información a diligenciar
-Describa las estrategias previstas para el acompañamiento y seguimiento a las actividades académicas, que permiten la interacción entre docentes y estudiantes en el proceso formativo.
 
-Mensaje Ayuda
-Se deben describir las estrategias previstas para el acompañamiento y seguimiento a las actividades académicas, que permiten la interacción entre docentes y estudiantes en el proceso formativo.
-</p> -->
-            <input type="text" id="CRITERIO ORGANIZACIÓN DE ACTIVIDADES ACADÉMICAS Y PROCESO FORMATIVO (3)" name="CRITERIO ORGANIZACIÓN DE ACTIVIDADES ACADÉMICAS Y PROCESO FORMATIVO (3)"  >
-            <p></p>
-          </li>
-          <li>
-            <label for="ANEXAR">ANEXAR</label>
-            <input type="text" id="ANEXAR" name="ANEXAR">
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
+
+          <!-- <p>Información a diligenciar
+  Describa las estrategias previstas para el acompañamiento y seguimiento a las actividades académicas, que permiten la interacción entre docentes y estudiantes en el proceso formativo.
+
+  Mensaje Ayuda
+  Se deben describir las estrategias previstas para el acompañamiento y seguimiento a las actividades académicas, que permiten la interacción entre docentes y estudiantes en el proceso formativo.
+  </p> -->
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">CRITERIO ORGANIZACIÓN DE ACTIVIDADES ACADÉMICAS Y PROCESO FORMATIVO (3)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
           <!---  <p>Anexar: Las evidencias previstas en los literales g), h) y k) del artículo 24 la Resolución 21795 de 2020, en coherencia con el nivel de formación, la(s) modalidad(es) y el (los) lugar(es) de desarrollo:
 
 • Descripción de las estrategias de seguimiento al proceso formativo del estudiante que le facilite su permanencia, graduación oportuna y logro de los resultados de aprendizaje.
@@ -656,57 +680,63 @@ b) Las actividades académicas previstas para el primer periodo académico, dise
 NOTA: Cuando se trate de una solicitud de registro calificado único, la organización de las actividades académicas y proceso formativo podrá ser similar en las modalidades y/o lugares de desarrollo del programa, indicando las particularidades de cada una(o).
 
 </p> -->
-          </li>
-          </ul>
-         </form> 
-      </div>
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
+
+      </div> <!--3.4 -->
       <p></p>
 
       <div> <h6>- 3.5 CONDICIÓN DE CALIDAD 5: INVESTIGACIÓN, INNOVACIÓN Y/O CREACIÓN ARTÍSTICA Y CULTURAL </h6>
-        <form action="form-page" method="post">
-          <ul>
-           <li>
-             <label for="INVESTIGACIÓN, INNOVACIÓN Y/O CREACIÓN ARTÍSTICA Y CULTURAL (1)">INVESTIGACIÓN, INNOVACIÓN Y/O CREACIÓN ARTÍSTICA Y CULTURAL (1) <br> *Síntesis (Máximo 7.000 caracteres)</label>
-            <!-- <p>Información a diligenciar
+
+          <!-- <p>Información a diligenciar
 Describa las estrategias, los contenidos y los medios previstos para la formación en investigación, innovación y/o creación artística y cultural que permitan alcanzar, entre otras, la incorporación del uso de las tecnologías de la información y la comunicación y el logro de competencias de pensamiento crítico, comunicación escrita, oral y otras formas de expresión, formulación y resolución de problemas, promoción de la creatividad y adaptabilidad.
 
 Mensaje Ayuda
 Describir, en coherencia con el nivel de formación, las estrategias, los contenidos y los medios previstos para la formación e investigación, innovación y/o creación artística y cultural que permitan alcanzar, entre otras, la incorporación del uso de las tecnologías de la información y la comunicación y el logro de competencias de pensamiento crítico, comunicación escrita, oral y otras formas de expresión, formulación y resolución de problemas, promoción de la creatividad y adaptabilidad.
 </p> -->
-             <input type="text" id="INVESTIGACIÓN, INNOVACIÓN Y/O CREACIÓN ARTÍSTICA Y CULTURAL (1)" name="INVESTIGACIÓN, INNOVACIÓN Y/O CREACIÓN ARTÍSTICA Y CULTURAL (1)"  >
-             <p></p>
-           </li>
-           <li>
-             <label for="ANEXAR">ANEXAR</label>
-             <input type="text" id="ANEXAR" name="ANEXAR">
+
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">INVESTIGACIÓN, INNOVACIÓN Y/O CREACIÓN ARTÍSTICA Y CULTURAL (1)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
            <!---  <p>• Documento que presente, en coherencia con el nivel de formación, la(s) modalidad(es) y el (los) lugar(es) de desarrollo, las evidencias definidas en los literales a), b) y c) del artículo 29 de la Resolución 21795 de 2020.
 • Documento con las estrategias, los contenidos y los medios previstos para la formación en investigación, innovación y/o creación artística y cultural que permitan alcanzar, entre otras, la incorporación del uso de las tecnologías de la información y la comunicación y el logro de competencias de pensamiento crítico, comunicación escrita, oral y otras formas de expresión, formulación y resolución de problemas, promoción de la creatividad y adaptabilidad. Se debe argumentar cómo las estrategias definidas para la formación en investigación, innovación y/o creación artística y cultural, posibilitarán el desarrollo del pensamiento crítico y/o creativo en el programa; así como: la comunicación escrita, oral y otras formas de expresión, formulación y resolución de problemas, promoción de la creatividad y adaptabilidad.
 
 NOTA: Cuando se trate de una solicitud de registro calificado único, la investigación, innovación y/o creación artística y cultural podrá ser similar en las modalidades y/o lugares de desarrollo del programa, indicando las particularidades de cada una(o).
 </p> -->
-           </li>
-           <li>
-            <label for="INVESTIGACIÓN, INNOVACIÓN Y/O CREACIÓN ARTÍSTICA Y CULTURAL (2)">INVESTIGACIÓN, INNOVACIÓN Y/O CREACIÓN ARTÍSTICA Y CULTURAL (2) <br> *Síntesis (Máximo 7.000 caracteres)</label>
-           <!-- <p>Información a diligenciar
-Declare explícitamente cómo prevé el programa académico la incorporación de la investigación, la innovación y/o creación artística y cultural, para el desarrollo del conocimiento, y defina las áreas, líneas o temáticas en las que se enfocarán los esfuerzos y proyectos.
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
 
-Mensaje Ayuda
-Presentar declaración explícita de cómo prevé el programa académico la incorporación de la investigación, innovación y/o creación artística y cultural para el desarrollo del conocimiento, y defina las áreas, líneas o temáticas de investigación en las que se enfocarán los esfuerzos y proyectos.
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
 
-La declaración debe tener en cuenta los siguientes propósitos:
+          <!-- <p>Información a diligenciar
+  Declare explícitamente cómo prevé el programa académico la incorporación de la investigación, la innovación y/o creación artística y cultural, para el desarrollo del conocimiento, y defina las áreas, líneas o temáticas en las que se enfocarán los esfuerzos y proyectos.
 
-• La comprensión teórica para la formación de un pensamiento innovador, con capacidad de construir, ejecutar, controlar y operar los medios y procesos para la solución de problemas que demandan los sectores productivos y de servicios del país.
-• La incorporación de la formación en investigación, innovación y/o creación artística y cultural de los estudiantes en concordancia con el nivel educativo y sus objetivos, el uso de las tecnologías de la información y de la comunicación.
-• El desarrollo de nuevos productos, procesos y usos de productos ya existentes.
-• La capacidad para dar respuestas transformadoras a problemas locales, regionales y globales, e indagar sobre la realidad social y ambiental, entre otros, a partir del uso del conocimiento como herramienta de desarrollo.
-• Aquellos programas que hicieron explícita la incorporación de la investigación, innovación y/o creación artística y cultural deberán evidenciar sus resultados de acuerdo con los lineamientos establecidos por el sistema nacional de ciencia y tecnología u otros afines.
-</p> -->
-            <input type="text" id="INVESTIGACIÓN, INNOVACIÓN Y/O CREACIÓN ARTÍSTICA Y CULTURAL (2)" name="INVESTIGACIÓN, INNOVACIÓN Y/O CREACIÓN ARTÍSTICA Y CULTURAL (2)"  >
-            <p></p>
-          </li>
-          <li>
-            <label for="ANEXAR">ANEXAR</label>
-            <input type="text" id="ANEXAR" name="ANEXAR">
+  Mensaje Ayuda
+  Presentar declaración explícita de cómo prevé el programa académico la incorporación de la investigación, innovación y/o creación artística y cultural para el desarrollo del conocimiento, y defina las áreas, líneas o temáticas de investigación en las que se enfocarán los esfuerzos y proyectos.
+
+  La declaración debe tener en cuenta los siguientes propósitos:
+
+  • La comprensión teórica para la formación de un pensamiento innovador, con capacidad de construir, ejecutar, controlar y operar los medios y procesos para la solución de problemas que demandan los sectores productivos y de servicios del país.
+  • La incorporación de la formación en investigación, innovación y/o creación artística y cultural de los estudiantes en concordancia con el nivel educativo y sus objetivos, el uso de las tecnologías de la información y de la comunicación.
+  • El desarrollo de nuevos productos, procesos y usos de productos ya existentes.
+  • La capacidad para dar respuestas transformadoras a problemas locales, regionales y globales, e indagar sobre la realidad social y ambiental, entre otros, a partir del uso del conocimiento como herramienta de desarrollo.
+  • Aquellos programas que hicieron explícita la incorporación de la investigación, innovación y/o creación artística y cultural deberán evidenciar sus resultados de acuerdo con los lineamientos establecidos por el sistema nacional de ciencia y tecnología u otros afines.
+  </p> -->
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">INVESTIGACIÓN, INNOVACIÓN Y/O CREACIÓN ARTÍSTICA Y CULTURAL (2)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
           <!---  <p>• Un documento con la declaración explícita, incluyendo los propósitos enunciados, de la forma como el programa académico prevé la incorporación de la investigación, innovación y/o creación artística y cultural para el desarrollo del conocimiento, y defina las áreas, líneas o temáticas de investigación en las que se enfocarán los esfuerzos y proyectos.
 • Un plan de desarrollo de la investigación, innovación y/o creación artística y cultural del programa que incluya objetivos, acciones, metas, indicadores, plazos, responsables y recursos para los próximos sietes (7) años.
 • Para los programas diferentes a los de maestría y doctorado en coherencia con el nivel de formación, la(s) modalidades y el(los) lugar(es) de desarrollo del programa presentar las evidencias definidas en los literales a) y b) del Artículo 30 de la Resolución 21795 de 2020.
@@ -714,49 +744,54 @@ La declaración debe tener en cuenta los siguientes propósitos:
 
 NOTA: Cuando se trate de una solicitud de registro calificado único, la investigación, innovación y/o creación artística y cultural podrá ser similar en las modalidades y/o lugares de desarrollo del programa, indicando las particularidades de cada una(o)
 </p> -->
-          </li>
-          <li>
-            <label for="INVESTIGACIÓN, INNOVACIÓN Y/O CREACIÓN ARTÍSTICA Y CULTURAL (3)">INVESTIGACIÓN, INNOVACIÓN Y/O CREACIÓN ARTÍSTICA Y CULTURAL (3) <br> *Síntesis (Máximo 7.000 caracteres)</label>
-           <!-- <p>Información a diligenciar
-Describa cómo los resultados de investigación, innovación y/o creación artística y cultural del programa, contribuirán a la formación social de las dinámicas que aporten a la construcción del país.
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
 
-Mensaje Ayuda
-Sustente cómo se identificaron las necesidades de la región y el país, indicando las fuentes empleadas y la actualización de dichas fuentes. Así mismo, sustente cómo las áreas, líneas o temáticas de investigación, innovación y/o creación artística y cultural en las que se enfocarán los esfuerzos y proyectos del programa de formación, aportarán al desarrollo de los sectores productivos y de servicios de la región y del país, así como al desarrollo social.
-</p> -->
-            <input type="text" id="INVESTIGACIÓN, INNOVACIÓN Y/O CREACIÓN ARTÍSTICA Y CULTURAL (3)" name="INVESTIGACIÓN, INNOVACIÓN Y/O CREACIÓN ARTÍSTICA Y CULTURAL (3)"  >
-            <p></p>
-          </li>
-          <li>
-            <label for="ANEXAR">ANEXAR</label>
-            <input type="text" id="ANEXAR" name="ANEXAR">
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
+
+          <!-- <p>Información a diligenciar
+ Describa cómo los resultados de investigación, innovación y/o creación artística y cultural del programa, contribuirán a la formación social de las dinámicas que aporten a la construcción del país.
+
+ Mensaje Ayuda
+ Sustente cómo se identificaron las necesidades de la región y el país, indicando las fuentes empleadas y la actualización de dichas fuentes. Así mismo, sustente cómo las áreas, líneas o temáticas de investigación, innovación y/o creación artística y cultural en las que se enfocarán los esfuerzos y proyectos del programa de formación, aportarán al desarrollo de los sectores productivos y de servicios de la región y del país, así como al desarrollo social.
+ </p> -->
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">INVESTIGACIÓN, INNOVACIÓN Y/O CREACIÓN ARTÍSTICA Y CULTURAL (3)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
           <!---  <p>• Un documento que describa la articulación de las áreas, líneas o temáticas de investigación, innovación y/o creación artística y cultural declaradas con las necesidades de la región y del país, las fuentes empleadas para la identificación de dichas necesidades.
 • Un documento en el que se sustente el aporte previsto al desarrollo de los sectores productivos y de servicios de la región y del país y al desarrollo social desde las áreas, líneas o temáticas de investigación, innovación y/o creación artística y cultural declaradas, en coherencia con el nivel de formación, la(s) modalidad(es), y el(los) lugar(es) de desarrollo del programa.
 
 NOTA: Cuando se trate de una solicitud de registro calificado único, la investigación, innovación y/o creación artística y cultural podrá ser similar en las modalidades y/o lugares de desarrollo del programa, indicando las particularidades de cada una(o).
 </p> -->
-          </li>
-          </ul>
-         </form> 
-      </div>
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
+
+      </div> <!--3.5 -->
       <p></p>
 
       <div> <h6>- 3.6 CONDICIÓN DE CALIDAD 6: RELACIÓN CON EL SECTOR EXTERNO </h6>
-        <form action="form-page" method="post">
-          <ul>
-        <li>
-          <label for="RELACIÓN CON EL SECTOR EXTERNO (1)">RELACIÓN CON EL SECTOR EXTERNO (1) <br> *Síntesis (Máximo 7.000 caracteres)</label>
-         <!-- <p>Información a diligenciar
+
+          <!-- <p>Información a diligenciar
 Describa los mecanismos y las estrategias que el programa académico genera para lograr una articulación e interacción sistémica con la comunidad educativa, sectores y dinámicas del medio externo, con el fin de fortalecer el desarrollo de las labores formativas, académicas, docentes, científicas, culturales y de extensión del programa y de enriquecer la práctica pedagógica, en coherencia con las modalidades, el nivel de formación del programa, la naturaleza jurídica de la institución, la tipología e identidad institucional.
 
 Mensaje Ayuda
 Describa los mecanismos y las estrategias que el programa académico genera para lograr una articulación e interacción sistémica con la comunidad educativa, sectores y dinámicas del medio externo, con el fin de fortalecer el desarrollo de las labores formativas, académicas, docentes, científicas, culturales y de extensión del programa y de enriquecer la práctica pedagógica, en coherencia con las modalidades, el nivel de formación del programa, la naturaleza jurídica de la institución, la tipología e identidad institucional.
 </p> -->
-          <input type="text" id="RELACIÓN CON EL SECTOR EXTERNO (1)" name="RELACIÓN CON EL SECTOR EXTERNO (1)"  >
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">RELACIÓN CON EL SECTOR EXTERNO (1)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
           <p></p>
-        </li>
-        <li>
-          <label for="ANEXAR">ANEXAR</label>
-          <input type="text" id="ANEXAR" name="ANEXAR">
+
         <!---  <p>Anexar: Las evidencias previstas en los literales a) y b) del artículo 33 de la Resolución 21795 de 2020, en coherencia con el nivel de formación, la(s) modalidad(es) y el (los) lugar(es) de desarrollo:
 
 • Plan de vinculación de la comunidad académica con el sector productivo, social y cultural, público y privado, según la naturaleza jurídica, misión, tipología e identidad institucional. Dicho plan deberá presentar las actividades y los recursos previstos (financieros, físicos, tecnológicos y humanos) para su desarrollo.
@@ -764,18 +799,18 @@ Describa los mecanismos y las estrategias que el programa académico genera para
 
 NOTA: Cuando se trate de una solicitud de registro calificado único, la relación con el sector externo podrá ser similar en las modalidades y/o lugares de desarrollo del programa, indicando las particularidades para cada una(o).
 </p> -->
-        </li>
-      </ul>
-      </form>
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
 
-      </div>
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
+
+      </div> <!--3.6 -->
       <p></p>
 
       <div> <h6>- 3.7 CONDICIÓN DE CALIDAD 7: PROFESORES </h6>
-       <form action="form-page" method="post">
-      <ul>
-        <li>
-          <label for="PROFESORES (1)">PROFESORES (1) <br> *Síntesis (Máximo 7.000 caracteres)</label>
+
          <!-- <p>Información a diligenciar
 Argumente cómo el plan de vinculación garantizará la suficiencia e idoneidad de los profesores en concordancia con el nivel, campo específico de formación del programa y el número de estudiantes proyectados.
 
@@ -786,12 +821,12 @@ El plan de vinculación debe indicar los perfiles establecidos para la selecció
 
 Cuando la institución presente nombres específicos de docentes, se sugiere anexar las hojas de vida (detallando formación académica, y experiencia docente y profesional) y el detalle sobre las labores o funciones que tendría a cargo en el programa.
 </p> -->
-          <input type="text" id="PROFESORES (1)" name="PROFESORES (1)"  >
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">PROFESORES (1)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
           <p></p>
-        </li>
-        <li>
-          <label for="ANEXAR">ANEXAR</label>
-          <input type="text" id="ANEXAR" name="ANEXAR">
+
         <!---  <p>Anexar: Las evidencias previstas en los literales a) y b) del artículo 36 y en los literales a) y b) del artículo 38 de la Resolución 21795 de 2020, en coherencia con el nivel de formación, la(s) modalidad(es) y el (los) lugar(es) de desarrollo:
 
 • Descripción del grupo de profesores con el que contará el programa académico o el plan de vinculación de profesores para el mismo, considerando su composición en términos del tipo de contratación, vinculación y dedicación, y la naturaleza jurídica, tipología y misión institucional.
@@ -806,50 +841,58 @@ e) Experiencia en investigación, innovación y/o creación artística y cultura
 
 NOTA: Cuando se trate de una solicitud de registro calificado único, la institución deberá presentar el desarrollo de esta condición de calidad para cada modalidad y/o lugar de desarrollo.
 </p> -->
-        </li>
-       <li>
-          <label for="PROFESORES (2)">PROFESORES (2) <br> *Síntesis (Máximo 7.000 caracteres)</label>
-         <!-- <p>Información a diligenciar
-Argumente cómo el plan de vinculación garantizará la idoneidad de los profesores en los programas a distancia, virtual, dual u otros desarrollos que combinen e integren las anteriores modalidades
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
 
-Mensaje Ayuda
-Describir el perfil de los profesores a vincular en concordancia con los requerimientos para el desarrollo de programas a distancia, virtual, dual u otros desarrollos que combinen e integren las anteriores modalidades, y los mecanismos de acompañamiento y de seguimiento de su desempeño. Cuando la complejidad del tipo de tecnologías de información y comunicación utilizadas en los programas lo requiera, se debe incluir plan de capacitación de los profesores en su uso.
-</p> -->
-          <input type="text" id="PROFESORES (2)" name="PROFESORES (2)"  >
+          <button type="button" class="btn btn-success">Subir</button>
           <p></p>
-        </li>
-        <li>
-          <label for="ANEXAR">ANEXAR</label>
-          <input type="text" id="ANEXAR" name="ANEXAR">
+
+          <!-- <p>Información a diligenciar
+ Argumente cómo el plan de vinculación garantizará la idoneidad de los profesores en los programas a distancia, virtual, dual u otros desarrollos que combinen e integren las anteriores modalidades
+
+ Mensaje Ayuda
+ Describir el perfil de los profesores a vincular en concordancia con los requerimientos para el desarrollo de programas a distancia, virtual, dual u otros desarrollos que combinen e integren las anteriores modalidades, y los mecanismos de acompañamiento y de seguimiento de su desempeño. Cuando la complejidad del tipo de tecnologías de información y comunicación utilizadas en los programas lo requiera, se debe incluir plan de capacitación de los profesores en su uso.
+ </p> -->
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">PROFESORES (2)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
         <!---  <p>Documento con información detallada del perfil de los profesores a vincular en concordancia con los requerimientos para el desarrollo de programas a distancia, virtual, dual u otros desarrollos que combinen e integren las anteriores modalidades, y los mecanismos de acompañamiento y de seguimiento de su desempeño. Cuando la complejidad del tipo de tecnologías de información y comunicación utilizadas en los programas lo requiera, se debe incluir plan de capacitación de los profesores en su uso. 
      NOTA: Cuando se trate de una solicitud de registro calificado único, la institución deberá presentar el desarrollo de esta condición de calidad para cada modalidad y/o lugar de desarrollo.  
      </p> -->
-        </li>
-        <li>
-          <label for="PROFESORES (3)">PROFESORES (3) <br> *Síntesis (Máximo 7.000 caracteres)</label>
-         <!-- <p>Información a diligenciar
-Argumente cómo el plan de vinculación garantizará la disponibilidad de los profesores en concordancia con las labores a desarrollar (formativas, académicas, docentes, científicas, culturales y de extensión), el nivel de formación y el campo de educación del programa.
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
 
-Mensaje Ayuda
-Argumentar cómo el plan de vinculación garantizará la disponibilidad de los profesores en concordancia con las labores a desarrollar (formativas, académicas, docentes, científicas, culturales y de extensión), el nivel de formación y el campo de educación del programa. En este sentido se deben relacionar los tiempos de dedicación que los profesores tendrán a las diferentes labores, por cada periodo durante la vigencia del registro calificado. Se deben especificar los tiempos que dedicarán al acompañamiento y seguimiento de los procesos de formación de los estudiantes, preparación de clase, desarrollo de investigación, producción intelectual y otras actividades que le sean asignadas.
-
-En cuanto a los profesores que apoyarán la actividad de investigación, innovación y/o creación artística y cultural, se debe presentar la descripción de los productos de investigación (artículos, desarrollo tecnológicos y de innovación, productos de creación, productos de investigación-creación, productos de apropiación social del conocimiento, productos de formación de recurso humano, etc.) requeridos en los perfiles de los docentes proyectados, en el campo específico del conocimiento del programa y acorde al nivel de formación del mismo, de tal forma que se demuestre la experiencia en investigación, innovación y/o creación artística y cultural en el área o línea que apoyarán.
-
-Lo anterior, teniendo en cuenta la declaración realizada para el programa en la condición de investigación, y en especial en coherencia con el nivel de formación y los resultados de investigación, innovación y/o creación artística y cultural esperados para el programa:
-
-• Demostrar que la planta de profesores presenta experiencia en investigación en las áreas, líneas o temáticas de investigación declaradas por el programa demostrada con productos de investigación debidamente publicados o registrados, y su clasificación como investigadores en el Sistema Nacional de Ciencia y Tecnología.
-• Demostrar que la planta de profesores de tiempo completo es suficiente para atender la dirección o tutoría de tesis o trabajos de grado en relación con el número de estudiantes proyectados.
-
-Teniendo en cuenta la declaración realizada por la IES en la condición de relación con el sector externo, y en especial en coherencia con el nivel de formación y los resultados esperados para el programa:
-
-• Demostrar coherencia con la experiencia laboral de los profesores específica referida a las actividades académicas que van a desarrollar.
-</p> -->
-          <input type="text" id="PROFESORES (3)" name="PROFESORES (3)"  >
+          <button type="button" class="btn btn-success">Subir</button>
           <p></p>
-        </li>
-        <li>
-          <label for="ANEXAR">ANEXAR</label>
-          <input type="text" id="ANEXAR" name="ANEXAR">
+
+          <!-- <p>Información a diligenciar
+ Argumente cómo el plan de vinculación garantizará la disponibilidad de los profesores en concordancia con las labores a desarrollar (formativas, académicas, docentes, científicas, culturales y de extensión), el nivel de formación y el campo de educación del programa.
+
+ Mensaje Ayuda
+ Argumentar cómo el plan de vinculación garantizará la disponibilidad de los profesores en concordancia con las labores a desarrollar (formativas, académicas, docentes, científicas, culturales y de extensión), el nivel de formación y el campo de educación del programa. En este sentido se deben relacionar los tiempos de dedicación que los profesores tendrán a las diferentes labores, por cada periodo durante la vigencia del registro calificado. Se deben especificar los tiempos que dedicarán al acompañamiento y seguimiento de los procesos de formación de los estudiantes, preparación de clase, desarrollo de investigación, producción intelectual y otras actividades que le sean asignadas.
+
+ En cuanto a los profesores que apoyarán la actividad de investigación, innovación y/o creación artística y cultural, se debe presentar la descripción de los productos de investigación (artículos, desarrollo tecnológicos y de innovación, productos de creación, productos de investigación-creación, productos de apropiación social del conocimiento, productos de formación de recurso humano, etc.) requeridos en los perfiles de los docentes proyectados, en el campo específico del conocimiento del programa y acorde al nivel de formación del mismo, de tal forma que se demuestre la experiencia en investigación, innovación y/o creación artística y cultural en el área o línea que apoyarán.
+
+ Lo anterior, teniendo en cuenta la declaración realizada para el programa en la condición de investigación, y en especial en coherencia con el nivel de formación y los resultados de investigación, innovación y/o creación artística y cultural esperados para el programa:
+
+ • Demostrar que la planta de profesores presenta experiencia en investigación en las áreas, líneas o temáticas de investigación declaradas por el programa demostrada con productos de investigación debidamente publicados o registrados, y su clasificación como investigadores en el Sistema Nacional de Ciencia y Tecnología.
+ • Demostrar que la planta de profesores de tiempo completo es suficiente para atender la dirección o tutoría de tesis o trabajos de grado en relación con el número de estudiantes proyectados.
+
+ Teniendo en cuenta la declaración realizada por la IES en la condición de relación con el sector externo, y en especial en coherencia con el nivel de formación y los resultados esperados para el programa:
+
+ • Demostrar coherencia con la experiencia laboral de los profesores específica referida a las actividades académicas que van a desarrollar.
+ </p> -->
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">PROFESORES (3)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
         <!---  <p>Las evidencias previstas en los literales a) y b) del artículo 40 de la Resolución 21795 de 2020, en coherencia con el nivel de formación, la(s) modalidad(es) y el (los) lugar(es) de desarrollo:
 
 • Descripción de los procesos de formulación, seguimiento y evaluación de la asignación y gestión de las actividades de los profesores.
@@ -857,21 +900,27 @@ Teniendo en cuenta la declaración realizada por la IES en la condición de rela
 
 NOTA: Cuando se trate de una solicitud de registro calificado único, la institución deberá presentar el desarrollo de esta condición de calidad para cada modalidad y/o lugar de desarrollo.
 </p> -->
-        </li>
-        <li>
-          <label for="PROFESORES (4)">PROFESORES (4) <br> *Síntesis (Máximo 7.000 caracteres)</label>
-         <!-- <p>Información a diligenciar
-Describa las estrategias para fomentar la permanencia y desarrollo de los profesores en el programa
 
-Mensaje Ayuda
-Describir los criterios y mecanismos para el desarrollo y permanencia de los profesores, orientados bajo principios de transparencia, mérito y objetividad. Se debe presentar el plan de capacitación docente, acorde con el nivel, modalidad y campo específico de formación del programa, así como planes de incentivos y otros que fomenten el desarrollo y permanencia de los profesores.
-</p> -->
-          <input type="text" id="PROFESORES (4)" name="PROFESORES (4)"  >
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
           <p></p>
-        </li>
-        <li>
-          <label for="ANEXAR">ANEXAR</label>
-          <input type="text" id="ANEXAR" name="ANEXAR">
+
+          <!-- <p>Información a diligenciar
+ Describa las estrategias para fomentar la permanencia y desarrollo de los profesores en el programa
+
+ Mensaje Ayuda
+ Describir los criterios y mecanismos para el desarrollo y permanencia de los profesores, orientados bajo principios de transparencia, mérito y objetividad. Se debe presentar el plan de capacitación docente, acorde con el nivel, modalidad y campo específico de formación del programa, así como planes de incentivos y otros que fomenten el desarrollo y permanencia de los profesores.
+ </p> -->
+
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">PROFESORES (4)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
         <!---  <p>Anexar: Las evidencias previstas en el Artículo 42 literales a), b) y c), y en el Artículo 44 literales a), b), c) y d) de la Resolución 21795 de 2020, en coherencia con el nivel de formación, la(s) modalidad(es) y el (los) lugar(es) de desarrollo:
 
 • Descripción de estrategias y acciones que promuevan la permanencia de los profesores.
@@ -885,31 +934,31 @@ d) Para la evaluación de la trayectoria académica de los profesores de program
 
 NOTA: Cuando se trate de una solicitud de registro calificado único, la institución deberá presentar el desarrollo de esta condición de calidad para cada modalidad y/o lugar de desarrollo.
 </p> -->
-        </li>
-      </ul>
-      </form>
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
 
-      </div>
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
+
+      </div> <!--3.7 -->
       <p></p>
 
       <div> <h6>- 3.8 CONDICIÓN DE CALIDAD 8: MEDIOS EDUCATIVOS</h6>
-        <form action="form-page" method="post">
-          <ul>
-           <li>
-              <label for="MEDIOS EDUCATIVOS (1)">MEDIOS EDUCATIVOS (1) <br> *Síntesis (Máximo 7.000 caracteres)</label>
-             <!-- <p>Información a diligenciar
+
+          <!-- <p>Información a diligenciar
 Describa la dotación de los ambientes físicos y/o virtuales de aprendizaje que incorporan equipos, mobiliario, plataformas tecnológicas, sistemas informáticos o los que hagan sus veces, recursos bibliográficos físicos y digitales, bases de datos, recursos de aprendizaje e información, entre otros, y argumente cómo estos atienden los procesos formativos, el desarrollo de la investigación, innovación y/o creación artística y cultural, y la extensión.
 
 Mensaje Ayuda
 Describir la dotación de los ambientes físicos y/o virtuales de aprendizaje que incorporan equipos, mobiliario, plataformas tecnológicas, sistemas informáticos o los que hagan sus veces, recursos bibliográficos físicos y digitales, de datos, recursos de aprendizaje e información, entre otros, y argumentar cómo estos atienden los procesos formativos, el desarrollo la investigación, innovación y/o creación artística y cultural, y la extensión.
 
 Diligenciar la plantilla (ME_01) de dotación de los ambientes y/o virtuales de aprendizaje que contiene información sobre: los equipos, mobiliario, plataformas tecnológicas, sistemas informáticos o los que hagan sus veces, recursos bibliográficos físicos y digitales, de datos, recursos de aprendizaje e información, entre otros, que atienden los procesos formativos (docencia), el desarrollo de la investigación, innovación y/o creación artística y cultural, y la extensión en el programa.</p> -->
-              <input type="text" id="MEDIOS EDUCATIVOS (1)" name="MEDIOS EDUCATIVOS (1)"  >
-              <p></p>
-            </li>
-            <li>
-              <label for="ANEXAR">ANEXAR</label>
-              <input type="text" id="ANEXAR" name="ANEXAR">
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">MEDIOS EDUCATIVOS (1)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
             <!---  <p>Anexar: Las evidencias previstas en el Artículo 46 literales a), b), c) y d), y en el Artículo 48 literales a) y b) de la Resolución 21795 de 2020, en coherencia con el nivel de formación, la(s) modalidad(es) y el (los) lugar(es) de desarrollo:
 
 • Dotación requerida (tipo y cantidad) por ambiente de aprendizaje para el desarrollo de las actividades que soportarán el proceso formativo, teniendo en cuenta, al menos, recursos de aprendizaje e información, equipos, mobiliario, plataformas tecnológicas, sistemas informáticos (software y hardware), recursos bibliográficos, físicos y digitales, y bases de datos. La cantidad requerida de cada medio educativo deberá estar debidamente justificada, especificando la dotación con la que cuenta el programa académico al momento de presentar la solicitud de registro calificado y el proceso que se adelantará, dado caso, para la adquisición, construcción o préstamo.
@@ -921,10 +970,15 @@ Diligenciar la plantilla (ME_01) de dotación de los ambientes y/o virtuales de 
 
 NOTA: Cuando se trate de una solicitud de registro calificado único, la institución deberá presentar el desarrollo de esta condición de calidad en cada modalidad y/o lugar de desarrollo.
 </p> -->
-            </li>
-            <li>
-              <label for="MEDIOS EDUCATIVOS (2)">MEDIOS EDUCATIVOS (2) <br> *Síntesis (Máximo 7.000 caracteres)</label>
-             <!-- <p>Información a diligenciar
+
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
+
+          <!-- <p>Información a diligenciar
 Describa los mecanismos de capacitación y apropiación de los medios educativos para los estudiantes y profesores adscritos al programa y un plan de mantenimiento, actualización y reposición de estos medios.
 
 Mensaje Ayuda
@@ -934,12 +988,12 @@ a) La coherencia entre lo dispuesto para el programa y la política instituciona
 b) La existencia de un plan de mantenimiento, actualización y reposición de los medios educativos en el programa.
 c) La coherencia entre el plan de mantenimiento, actualización y reposición de los medios educativos en el programa y la política institucional.
 </p> -->
-              <input type="text" id="MEDIOS EDUCATIVOS (2)" name="MEDIOS EDUCATIVOS (2)"  >
-              <p></p>
-            </li>
-            <li>
-              <label for="ANEXAR">ANEXAR</label>
-              <input type="text" id="ANEXAR" name="ANEXAR">
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">MEDIOS EDUCATIVOS (2)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
             <!---  <p>Las evidencias previstas en el Artículo 48 literales c), d) y e) de la Resolución 21795 de 2020, en coherencia con el nivel de formación, la(s) modalidad(es) y el (los) lugar(es) de desarrollo:
 
 • Descripción de los procesos de capacitación y apropiación en el uso de los medios educativos.
@@ -948,10 +1002,15 @@ c) La coherencia entre el plan de mantenimiento, actualización y reposición de
 
 NOTA: Cuando se trate de una solicitud de registro calificado único, la institución deberá presentar el desarrollo de esta condición de calidad en cada modalidad y/o lugar de desarrollo.
 </p> -->
-            </li>
-            <li>
-              <label for="MEDIOS EDUCATIVOS (3)">MEDIOS EDUCATIVOS (3) <br> *Síntesis (Máximo 7.000 caracteres)</label>
-             <!-- <p>Información a diligenciar
+
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
+
+          <!-- <p>Información a diligenciar
 Describa los medios educativos para cada modalidad (presencial, a distancia, virtual, dual u otros desarrollos que combinen e integren las anteriores modalidades) y las estrategias que implementa el programa para atender las barreras de acceso y características de la población.
 
 Mensaje Ayuda
@@ -959,38 +1018,48 @@ Describir los medios educativos para cada modalidad (presencial, a distancia, vi
 
 NOTA: Cuando se trate de una solicitud de registro calificado único, la institución deberá presentar el desarrollo de esta condición de calidad en cada modalidad y/o lugar de desarrollo.
 </p> -->
-              <input type="text" id="MEDIOS EDUCATIVOS (3)" name="MEDIOS EDUCATIVOS (3)"  >
-              <p></p>
-            </li>
-            <li>
-              <label for="ANEXAR">ANEXAR</label>
-              <input type="text" id="ANEXAR" name="ANEXAR">
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">MEDIOS EDUCATIVOS (3)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
             <!---  <p></p> -->
-            </li>
-            <li>
-              <label for="MEDIOS EDUCATIVOS (4)">MEDIOS EDUCATIVOS (4) <br> *Síntesis (Máximo 7.000 caracteres)</label>
-             <!-- <p>Información a diligenciar
+
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
+
+          <!-- <p>Información a diligenciar
 Describa los medios educativos disponibles según la modalidad del programa, en los centros de tutoría, prácticas o talleres.
 
 Mensaje Ayuda
 Describir los medios educativos disponibles según la modalidad del programa, en los centros de tutoría, prácticas o talleres.
 </p> -->
-              <input type="text" id="MEDIOS EDUCATIVOS (4)" name="MEDIOS EDUCATIVOS (4)"  >
-              <p></p>
-            </li>
-            <li>
-              <label for="ANEXAR">ANEXAR</label>
-              <input type="text" id="ANEXAR" name="ANEXAR">
-            <!---  <p>Diligenciar la plantilla ME_02 en donde se indiquen los medios educativos disponibles según la(s) modalidad(es) del programa, en los centros de tutoría, prácticas o talleres, incluyendo los dispuestos para los programas que incorporan prácticas docencia servicio (programas del campo de salud y bienestar, y programas de psicología), en los escenarios con los cuales tiene suscritos convenios docencia servicio.
+
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">MEDIOS EDUCATIVOS (4)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
+                <!---  <p>Diligenciar la plantilla ME_02 en donde se indiquen los medios educativos disponibles según la(s) modalidad(es) del programa, en los centros de tutoría, prácticas o talleres, incluyendo los dispuestos para los programas que incorporan prácticas docencia servicio (programas del campo de salud y bienestar, y programas de psicología), en los escenarios con los cuales tiene suscritos convenios docencia servicio.
 
 NOTA: Cuando se trate de una solicitud de registro calificado único, la institución deberá presentar el desarrollo de esta condición de calidad en cada modalidad y/o lugar de desarrollo.
 Solo aplica para programas desarrollados en centros de tutoría, prácticas o talleres, incluyendo los programas en Salud o de psicología que contengan prácticas clínicas.
 
 </p> -->
-            </li>
-            <li>
-              <label for="MEDIOS EDUCATIVOS (5)">MEDIOS EDUCATIVOS (5) <br> *Síntesis (Máximo 7.000 caracteres)</label>
-             <!-- <p>Información a diligenciar
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
+
+          <!-- <p>Información a diligenciar
 Para los programas del campo de salud y bienestar y de psicología, describa los escenarios de práctica en los cuales se desarrollen prácticas formativas docencia servicio.
 
 Para programas de pregrado en el área de educación, describa las instituciones educativas de los niveles de preescolar, básica o medias para el desarrollo de las prácticas (pedagógicas, educativas, docentes, entre otras), así como estrategias previstas para garantizar el acompañamiento y seguimiento de dichas prácticas por parte de profesores de la IES que oferta el programa.
@@ -1004,37 +1073,40 @@ NOTA 1: Cuando se trate de una solicitud de registro calificado único, la insti
 
 NOTA 2: Cuando se trate de una solicitud de registro calificado único, la relación con el sector externo podrá ser similar en las modalidades y/o lugares de desarrollo del programa, indicando las particularidades para cada una(o).
 </p> -->
-              <input type="text" id="MEDIOS EDUCATIVOS (5)" name="MEDIOS EDUCATIVOS (5)"  >
-              <p></p>
-            </li>
-            <li>
-              <label for="ANEXAR">ANEXAR</label>
-              <input type="text" id="ANEXAR" name="ANEXAR">
+
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">MEDIOS EDUCATIVOS (5)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
             <!---  <p>Esta plantilla solo aplica para los programas del campo de salud y bienestar, y programas de psicología.</p> -->
-            </li>
-          </ul>
-          </form>
-      </div>
+
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
+
+      </div> <!--3.8 -->
       <p></p>
 
       <div> <h6>- 3.9 CONDICIÓN DE CALIDAD 9: INFRAESTRUCTURA FÍSICA Y TECNOLÓGICA</h6>
-        <form action="form-page" method="post">
-          <ul>
-           <li>
-              <label for="INFRAESTRUCTURA FÍSICA Y TECNOLÓGICA (1)">INFRAESTRUCTURA FÍSICA Y TECNOLÓGICA (1)<br> *Síntesis (Máximo 7.000 caracteres)</label>
-             <!-- <p>Información a diligenciar
+
+          <!-- <p>Información a diligenciar
 Describa los ambientes físicos y virtuales de aprendizaje específicos para el desarrollo de los procesos formativos, la investigación, innovación y/o creación artística y cultural, y la extensión, de acuerdo con las modalidades del programa
 
 Mensaje Ayuda
 Describir los ambientes físicos y virtuales de aprendizaje específicos para el desarrollo de los procesos formativos, la investigación, innovación y/o creación artística y cultural, y la extensión, de acuerdo con la(s) modalidad(es) del programa.
 
 Diligenciar la plantilla IFYT_01.</p> -->
-              <input type="text" id="INFRAESTRUCTURA FÍSICA Y TECNOLÓGICA (1)" name="INFRAESTRUCTURA FÍSICA Y TECNOLÓGICA (1)"  >
-              <p></p>
-            </li>
-            <li>
-              <label for="ANEXAR">ANEXAR</label>
-              <input type="text" id="ANEXAR" name="ANEXAR">
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">INFRAESTRUCTURA FÍSICA Y TECNOLÓGICA (1)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
             <!---  <p>Anexar: Las evidencias previstas en los literales a) y b) del Artículo 50, y en los literales a), b) y c) del Artículo 52 de la Resolución 21795 de 2020, en coherencia con el nivel de formación, la(s) modalidad(es) y el (los) lugar(es) de desarrollo:
 
 • Descripción y justificación de la cantidad, calidad y capacidad de los espacios físicos y virtuales que se requieren para soportar los ambientes de aprendizaje y atender las actividades académicas y administrativas del programa, en coherencia con la gestión de recursos físicos y tecnológicos prevista en la condición de calidad institucional de que trata el artículo 2.5.3.2.3.1.7. del Decreto 1075 de 2015, modificado por el Decreto 1330 de 2019, especificando los espacios con los que se cuenta en el momento de presentar la solicitud de registro calificado y los espacios en proceso de adquisición, construcción o préstamo.
@@ -1045,10 +1117,15 @@ Diligenciar la plantilla IFYT_01.</p> -->
 
 NOTA: Cuando se trate de una solicitud de registro calificado único, la institución deberá presentar el desarrollo de esta condición de calidad en cada modalidad y/o lugar de desarrollo.
 </p> -->
-            </li>
-            <li>
-              <label for="INFRAESTRUCTURA FÍSICA Y TECNOLÓGICA (2)">INFRAESTRUCTURA FÍSICA Y TECNOLÓGICA (2) <br> *Síntesis (Máximo 7.000 caracteres)</label>
-             <!-- <p>Información a diligenciar
+
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
+
+          <!-- <p>Información a diligenciar
 Describa los instrumentos jurídicos, civiles o comerciales, que demuestran la disponibilidad de una infraestructura física y tecnológica para soportar el desarrollo del programa.
 
 Mensaje Ayuda
@@ -1059,12 +1136,13 @@ Para el caso de los programas académicos de psicología y del campo de salud y 
 Diligenciar plantilla IFYT_02
 
 </p> -->
-              <input type="text" id="INFRAESTRUCTURA FÍSICA Y TECNOLÓGICA (2)" name="INFRAESTRUCTURA FÍSICA Y TECNOLÓGICA (2)"  >
-              <p></p>
-            </li>
-            <li>
-              <label for="ANEXAR">ANEXAR</label>
-              <input type="text" id="ANEXAR" name="ANEXAR">
+
+          <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">INFRAESTRUCTURA FÍSICA Y TECNOLÓGICA (2)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="*Síntesis (Máximo 7.000 caracteres)"></textarea>
+          </div>
+          <p></p>
+
             <!---  <p>Las evidencias previstas en el Artículo 52 literales d) y e) de la Resolución 21795 de 2020, en coherencia con el nivel de formación, la(s) modalidad(es) y el (los) lugar(es) de desarrollo:
 
 • Acuerdos de voluntades, convenios o contratos, que deberán incluir los alcances de la disponibilidad de la infraestructura física y tecnológica para el programa académico, en términos de horarios y capacidad, durante la vigencia del registro calificado, de ser aplicable.
@@ -1073,18 +1151,26 @@ Diligenciar plantilla IFYT_02
 
 NOTA: Cuando se trate de una solicitud de registro calificado único, la institución deberá presentar el desarrollo de esta condición de calidad en cada modalidad y/o lugar de desarrollo.
 </p> -->
-            </li>
-          </ul>
-          </form>
-      </div>
+
+          <div class="mb-3">
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <button type="button" class="btn btn-success">Subir</button>
+          <p></p>
+
+      </div> <!--3.9 -->
       <p></p>
 
     </div> <!-- 3 CONDICIONES DEL PROGRAMA -->
-        
 
-  <p></p>
+    </div>
 
-       <p>...</p>
-       
+     <div class="container text-center py-4">
+     <button type="button" class="btn btn-warning">Subir todo el formulario</button>
+     <button type="button" class="btn btn-danger">Marcar como finalizado</button>
+     </div>
+
+
 </body>
 </html>
