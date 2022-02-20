@@ -8,7 +8,7 @@ const app = express(); //Inicializar server
 
 //Configurar
 //Puertos:
-app.set('port', process.env.PORT || 4000);
+app.set('port', process.env.PORT || 7500);
 //Gestor de plantillas
 app.set('view engine', 'ejs');
 //Rutas de las vistas
