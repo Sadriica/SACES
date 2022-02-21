@@ -9,13 +9,30 @@ const connection = mysql.createConnection({
     database : process.env.DB_DATABASE
 });
 
+
+
+let estado = "";
+
 //verificador de que la conexion sea adecuada 
 connection.connect((err) => {
     if(err){
-        console.log("Error de conexion con BD:" + err);
+        estado = "Error de conexion con BD: ";
+
+        function estado3 () {
+            return  estado
+        }
+        console.log(estado3())
+        console.log(err);
         return;
     }
-    console.log("conectado exitosamente con la BD")
+
+    estado = "conectado exitosamente con la BD";
+
+    function estado2 () {
+        return  estado
+    }
+
+    console.log(estado2())
 })
 
 module.exports = connection;
