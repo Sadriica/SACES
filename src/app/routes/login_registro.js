@@ -39,6 +39,14 @@ module.exports = app => {
         res.render('../views/systems.ejs');
     })
 
+    app.get('/electronic', (req, res) => {
+        res.render('../views/electronic.ejs');
+    })
+
+    app.get('/industrial', (req, res) => {
+        res.render('../views/industrial.ejs');
+    })
+
     app.get('/administration', (req, res) => {
         res.render('../views/administration.ejs');
     })
