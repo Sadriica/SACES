@@ -9,12 +9,12 @@ module.exports = app => {
 
             res.render('../views/loginn.ejs', {
                 login: true,
-                name: req.session.name
+                id: req.session.id
             });
         } else {
             res.render('../views/loginn.ejs', {
                 login: false,
-                name: 'Inicie sesión'
+                id: 'Inicie sesión'
             });
         }
     })
@@ -57,7 +57,7 @@ module.exports = app => {
 
 
     app.get('/administrador', (req, res) => {
-        connection.query('SELECT * FROM contacto', (err, results) => {
+        connection.query('SELECT * FROM usuarios', (err, results) => {
             if (err) {
                 console.log(err)
             } else {
@@ -130,14 +130,35 @@ module.exports = app => {
      }) */
 
 
-    /*  // Solicitud POST en Formulario de contacto
-     app.post('/contacto', (req,res) =>{
-         const {nombre,numerocontacto,mensaje} = req.body
+     // Solicitud POST en Formulario de contacto
+     app.post('/formulario_sistemas', (req,res) =>{
+         const {uno,unos_archivo,dos,dos_archivo,tres,tres_archivo,cuatro,cuatro_archivo,cinco,cinco_archivo,seis,seis_archivo,siete,siete_archivo,ocho,ocho_archivo,nueve,nueve_archivo,diez,diez_archivo,once,once_archivo,doce,doce_archivo} = req.body
          console.log(req.body)
-         connection.query('INSERT INTO contacto SET ?' , {
-             nombre : nombre ,
-             numerocontacto : numerocontacto,
-             mensaje : mensaje
+         connection.query('INSERT INTO formulario SET ?' , {
+             informacion_general : uno,
+             informacion_general_archivo : unos_archivo,
+             informacion_tramite : dos,
+             informacion_tramite_archivo : dos_archivo,
+             nivel_formacion : tres,
+             nivel_formacion_archivo : tres_archivo,
+             solicitud_registro : cuatro,
+             solicitud_registro_archivo : cuatro_archivo,
+             informacion_especif : cinco,
+             informacion_especif_archivo : cinco_archivo,
+             creditos_programa : seis,
+             creditos_programa_archivo : seis_archivo,
+             escenarios_practica : siete,
+             escenarios_practica_archivo : siete_archivo,
+             ciclos_propedeuticos : ocho,
+             ciclos_propedeuticos_archivo : ocho_archivo,
+             cubrimiento_programa : nueve,
+             cubrimiento_programa_archivo : nueve_archivo,
+             idiomas : diez,
+             idiomas_archivo : diez_archivo,
+             creacion_programas : once,
+             creacion_programas_archivo : once_archivo,
+             contacto_programa : doce,
+             contacto_programa_archivo: doce_archivo
          }, (error,result) => {
              if(error){
                  console.log(error);
@@ -147,13 +168,13 @@ module.exports = app => {
 
              }
          })
-     } ) */
+     } )
 
 
     //Solicitud POST de login
     app.post('/auth', async (req, res) => {
         const {id, nombre} = req.body;
-        if (id === process.env.id_usuario && nombre === process.env.nombre) {
+        if (id === process.env.NOMBRE_ADMIN && nombre === process.env.PASS_ADMIN) {
             connection.query('SELECT * FROM usuarios', (err, results) => {
                 if (err) {
                     console.log(err)
@@ -166,19 +187,18 @@ module.exports = app => {
         }
 
 
-        // let passwordHaash = await bcryptjs.hash(nombre, 8);
-        // results.length === 0 || !(await bcryptjs.compare(nombre, results[0].nombre))
+         let passwordHaash = await bcryptjs.hash(nombre, 8);
 
         if (id && nombre) {
-            connection.query('SELECT * FROM usuarios WHERE nombre = ?', [nombre], async (err, results) => {
+            connection.query('SELECT * FROM usuarios WHERE id_usuario = ?', [id], async (err, results) => {
                 console.log( results);
-                if (id !== "1") {
+                if (results.length === 0 || !(await bcryptjs.compare(nombre, results[0].nombre))) {
                     console.log(err)
                     res.render('../views/loginn.ejs', {
                         //login incorrecto sw2
                         alert: true,
                         alertTitle: 'Error',
-                        alertMessage: 'Correo y/o contraseña incorrectas',
+                        alertMessage: 'id y/o contraseña incorrectas',
                         alertIcon: 'error',
                         showConfirmButton: true,
                         timer: 6000,
@@ -186,7 +206,7 @@ module.exports = app => {
                     });
                 } else {
                     req.session.loggedin = true;
-                    req.session.name = nombre;
+                    req.session.id = results[0].id;
                     res.render('../views/engineering.ejs', {
                         //login correcto sw2
                         alert: true,
